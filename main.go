@@ -18,4 +18,11 @@ func main(){
 	p.name = "John"
 	p.age = 30
 	fmt.Println(p)
+
+	//callback function
+	func(callback func(string)){
+		callback("Hello from callback");
+	}(func(message string){
+		fmt.Println(message);
+	})
 }
