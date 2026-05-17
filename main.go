@@ -31,4 +31,12 @@ func main(){
 	defer fmt.Println("This will be printed third");
 	fmt.Println("This will be printed first");	
 
+	//pointer
+	var x int = 10
+	var p1 *int = &x
+	fmt.Println("Value of x:", x)
+	fmt.Println("Address of x:", &x)
+	fmt.Println("Value of p1:", p1)
+	fmt.Println("Value pointed to by p1:", *p1)
+
 }
