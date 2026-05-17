@@ -25,4 +25,10 @@ func main(){
 	}(func(message string){
 		fmt.Println(message);
 	})
+	//differ function with lifo principle
+	defer fmt.Println("This will be printed last");
+	defer fmt.Println("This will be printed second");
+	defer fmt.Println("This will be printed third");
+	fmt.Println("This will be printed first");	
+
 }
