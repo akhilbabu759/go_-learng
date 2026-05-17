@@ -10,4 +10,12 @@ func main(){
 	for i:=0;i<5;i++{
 		fmt.Println(i);
 	}
+	type Person struct {
+		name string
+		age int
+	}
+	var p Person
+	p.name = "John"
+	p.age = 30
+	fmt.Println(p)
 }
